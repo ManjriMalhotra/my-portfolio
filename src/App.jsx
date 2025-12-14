@@ -4,12 +4,14 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Contributions from "./components/Contributions";
 import Connect from "./components/Connect";
+import ScrollBarProgress from "./components/ScrollBarProgress";
 
 // import Hustle from "./components/Hustle";
-Contributions
 
 export default function App() {
   return (
+    <>
+    <ScrollBarProgress/>
     <main className="max-w-6xl mx-auto px-4 py-20">
       <div className="flex flex-col md:flex-row gap-20">
         {/* Left side fixed column */}
@@ -26,5 +28,6 @@ export default function App() {
         </div>
       </div>
     </main>
+    </>
   );
 }
